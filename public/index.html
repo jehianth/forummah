@@ -4,31 +4,13 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Masjid Al Ikhlas Muhammadiyah Pasir Wetan</title>
+    <link href="/src/index.css" rel="stylesheet" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +21,249 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <header
+      class="hidden lg:block fixed w-full top-0 bg-opacity-75 backdrop-filter backdrop-blur-lg z-10"
+    >
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <div class="flex items-center ml-48">
+          <img
+            src="https://i.ibb.co/9vfCdCy/mosque.png"
+            alt="Logo"
+            class="h-8"
+          />
+        </div>
+        <nav class="hidden lg:flex lg:items-center lg:mr-44">
+          <a href="#beranda" class="mr-5 hover:text-sky-500 focus:text-sky-500"
+            >Beranda</a
+          >
+          <a
+            href="#informasi"
+            class="mr-5 hover:text-sky-500 focus:text-sky-500"
+            >Informasi</a
+          >
+          <a href="#profil" class="mr-5 hover:text-sky-500 focus:text-sky-500"
+            >Profil</a
+          >
+          <a href="#kegiatan" class="mr-5 hover:text-sky-500 focus:text-sky-500"
+            >Kegiatan</a
+          >
+          <a
+            href="#fasilitas"
+            class="mr-5 hover:text-sky-500 focus:text-sky-500"
+            >Fasilitas</a
+          >
+          <a href="#takmir" class="mr-5 hover:text-sky-500 focus:text-sky-500"
+            >Takmir</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav
+      class="lg:hidden fixed bottom-0 left-0 w-full bg-opacity-75 backdrop-filter backdrop-blur-lg z-10 rounded-t-3xl"
+    >
+      <div
+        class="flex justify-between items-center h-16 px-6 rounded-l-3xl rounded-r-3xl"
+      >
+        <!-- Icon 1 -->
+        <a href="#beranda" class="text-gray-500 hover:text-sky-500">
+          <ion-icon name="home-sharp" class="text-xl"></ion-icon>
+        </a>
+        <!-- Icon 2 -->
+        <a href="#informasi" class="text-gray-500 hover:text-sky-500">
+          <ion-icon name="megaphone" class="text-xl"></ion-icon>
+        </a>
+        <a href="#profil" class="text-gray-500 hover:text-sky-500">
+          <ion-icon name="paper-plane" class="text-xl"></ion-icon>
+        </a>
+        <!-- Icon 3 -->
+        <a href="#kegiatan" class="text-gray-500 hover:text-sky-500">
+          <ion-icon name="bookmarks" class="text-xl"></ion-icon>
+        </a>
+        <!-- Icon 4 -->
+        <a href="#fasilitas" class="text-gray-500 hover:text-sky-500">
+          <ion-icon name="file-tray-stacked" class="text-xl"></ion-icon>
+        </a>
+        <!-- Icon 5 -->
+        <a href="#takmir" class="text-gray-500 hover:text-sky-500">
+          <ion-icon name="people" class="text-xl"></ion-icon>
+        </a>
+      </div>
+    </nav>
+    <!-- beranda -->
+    <section id="beranda" class="pt-6 pb-36 lg:pb-56">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-6 lg:w-1/2 lg:pl-48 lg:pt-40">
+          <div class="bg-sky-100 rounded-lg p-2 flex w-fit align-middle">
+            <ion-icon
+              name="location-sharp"
+              class="text-xl pt-0.5 pr-1.5 text-sky-500"
+            ></ion-icon>
+            <span class="font-medium"
+              >Masjid Al Ikhlas Muhammadiyah Pasir Wetan</span
+            >
+          </div>
+          <h1
+            class="hidden md:block font-bold text-4xl mt-7 mb-5 leading-tight"
+          >
+            <u class="underline decoration-sky-500">Allah</u> Akan Menolong
+            Orang <br />Yang Berjuang Di Jalan-<u
+              class="underline decoration-sky-500"
+              >Nya</u
+            >.
+          </h1>
+          <h1
+            class="block md:hidden font-bold text-4xl mt-7 mb-5 leading-tight"
+          >
+            <u class="underline decoration-sky-500">Allah</u> Akan Menolong
+            Orang Yang Berjuang <br />Di Jalan-<u
+              class="underline decoration-sky-500"
+              >Nya</u
+            >.
+          </h1>
+          <p class="hidden md:block text-slate-500 mb-5">
+            Website ini dibuat dengan tujuan untuk mempermudah Para Jamaah dalam
+            <br />memperoleh Informasi terkait Masjid dengan lebih mudah dan
+            cepat!
+          </p>
+          <p class="block md:hidden text-slate-500 mb-5">
+            Website ini dibuat dengan tujuan untuk mempermudah <br />Para Jamaah
+            dalam memperoleh Informasi terkait Masjid <br />dengan lebih mudah
+            dan cepat!
+          </p>
+          <a
+            href="https://goo.gl/maps/Hzxy6izFEMAks7tS7"
+            target="_blank"
+            class="bg-sky-600 hover:bg-sky-700 text-white rounded-md px-4 py-2 mr-2"
+            >Cek Lokasi di Maps</a
+          >
+          <a
+            href="https://www.youtube.com/watch?v=AXrTwShQq3k"
+            target="_blank"
+            class="bg-slate-400 hover:bg-slate-500 text-white rounded-md px-4 py-2"
+            >Jelajahi dengan Video</a
+          >
+        </div>
+        <div class="w-full self-end px-6 py-7 lg:w-1/2 lg:pr-48 lg:pt-40">
+          <img src="./images/foto-masjid.jpg" class="rounded-lg" />
+        </div>
+      </div>
+    </section>
+    <!-- beranda end -->
+    <!-- informasi -->
+    <section id="informasi" class="pb-36 lg:pb-56 lg:pt-16">
+      <div class="w-full self-center px-6 lg:px-48">
+        <div class="bg-sky-100 rounded-lg p-2 flex w-fit align-middle mb-4">
+          <ion-icon
+            name="megaphone"
+            class="text-xl pt-0.5 pr-3 text-sky-500"
+          ></ion-icon>
+          <span class="font-medium">INFORMASI</span>
+        </div>
+        <p class="mb-5 text-justify">
+          Idul Adha 1444 Hijriyah jatuh pada hari Rabu, 28 Juni 2023.
+        </p>
+      </div>
+    </section>
+    <!-- informasi end -->
+    <!-- profil -->
+    <section id="profil" class="pb-36 lg:pb-56 lg:pt-16">
+      <div class="w-full self-center px-6 lg:px-48">
+        <div class="bg-sky-100 rounded-lg p-2 flex w-fit align-middle mb-4">
+          <ion-icon
+            name="paper-plane"
+            class="text-xl pt-0.5 pr-3 text-sky-500"
+          ></ion-icon>
+          <span class="font-medium">PROFIL</span>
+        </div>
+        <p class="mb-5 text-justify">
+          Masjid Al Ikhlas Muhammadiyah Pasir Wetan didirikan pada tanggal 19
+          Desember 2020. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Sapiente molestiae minus dolorem quas iste voluptatem tempore
+          cumque corrupti maxime magnam quidem pariatur laudantium alias
+          doloremque culpa amet, laboriosam ratione officia, adipisci ea at rem
+          exercitationem recusandae. Perferendis ipsum debitis laborum suscipit
+          distinctio maxime quia voluptas commodi iusto, reprehenderit sed rerum
+          praesentium. Laudantium eveniet voluptatem harum, quos laborum vero
+          totam modi fugiat quo officia tempore dolor sequi ullam, ipsum
+          voluptate? Provident quos, consequatur quae velit aliquid beatae dicta
+          voluptatem placeat magni rerum vitae ut neque laudantium incidunt
+          repellendus. Possimus, corrupti quos?
+        </p>
+      </div>
+    </section>
+    <!-- profil end -->
+    <!-- kegiatan -->
+    <section id="kegiatan" class="pb-36 lg:pb-56 lg:pt-16">
+      <div class="w-full self-center px-6 lg:px-48">
+        <div class="bg-sky-100 rounded-lg p-2 flex w-fit align-middle mb-4">
+          <ion-icon
+            name="bookmarks"
+            class="text-xl pt-0.5 pr-3 text-sky-500"
+          ></ion-icon>
+          <span class="font-medium">KEGIATAN</span>
+        </div>
+        <ul class="list-disc mb-5 pl-6">
+          <li>Kuliah Subuh</li>
+          <li>Ahad Pagi</li>
+          <li>Pengajian Rutin</li>
+        </ul>
+      </div>
+    </section>
+    <!-- kegiatan end -->
+    <!-- fasilitas -->
+    <section id="fasilitas" class="pb-36 lg:pb-56 lg:pt-16">
+      <div class="w-full self-center px-6 lg:px-48">
+        <div class="bg-sky-100 rounded-lg p-2 flex w-fit align-middle mb-4">
+          <ion-icon
+            name="file-tray-stacked"
+            class="text-xl pt-0.5 pr-3 text-sky-500"
+          ></ion-icon>
+          <span class="font-medium">FASILITAS</span>
+        </div>
+        <ul class="list-disc mb-5 pl-6">
+          <li>AC 5 unit</li>
+          <li>Kipas Angin 4 unit (2 di dalam, 2 di luar)</li>
+          <li>Parkir luas</li>
+          <li>Full Karpet tiap shaf</li>
+          <li>Al-Qur'an, Buku Kenabian, Buku Manajemen, Catatan TPQ, dsb</li>
+          <li>Sarung dan Mukena</li>
+          <li>Tempat Wudhu Pisah (masing-masing 2 WC)</li>
+          <li>Dapur</li>
+          <li>Ruang Tamu</li>
+          <li>Ruang Belajar</li>
+        </ul>
+      </div>
+    </section>
+    <!-- fasilitas end -->
+    <!-- takmir -->
+    <section id="takmir" class="pb-36 lg:pb-56 lg:pt-16">
+      <div class="w-full self-center px-6 lg:px-48">
+        <div class="bg-sky-100 rounded-lg p-2 flex w-fit align-middle mb-4">
+          <ion-icon
+            name="people"
+            class="text-xl pt-0.5 pr-3 text-sky-500"
+          ></ion-icon>
+          <span class="font-medium">TAKMIR</span>
+        </div>
+      </div>
+    </section>
+    <!-- takmir end -->
+    <!-- kegiatan list, fasilitas grid, takmir(card foto orang), kontak -->
+    <footer class="h-60 text-slate-200 bg-slate-700 lg:h-auto">
+      <div class="text-center my-16 lg:my-0">
+        <div class="h-4">‎</div>
+        <img class="h-28 m-auto mb-4" src="./images/lazizmu.png" />
+        &copy; 2023 <u>PRM Pasir Wetan</u>. All rights reserved
+      </div>
+    </footer>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </html>
